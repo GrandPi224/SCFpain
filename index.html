@@ -809,6 +809,14 @@
                     <td>$${data.creditCardBalances.toLocaleString()}</td>
                 `;
                 tableBody.appendChild(row);
+                
+    const row_image = document.createElement('tr');
+    row_image.innerHTML = `
+    <td colspan="8" style="text-align:center;">
+        <img src="" alt="${data.category}" style="max-width:200px; height:auto;" />
+    </td>
+`;
+tableBody.appendChild(row_image);
             });
         });
     </script>
